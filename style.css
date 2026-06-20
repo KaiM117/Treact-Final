@@ -16,9 +16,17 @@ section {
   padding: 0 32px;
 }
 
+header{
+    position: relative;
+}
+
 a {
   display: inline;
   text-decoration: none;
+}
+
+img{
+    width: 100%;
 }
 
 /* Nav Bar */
@@ -59,12 +67,12 @@ nav {
   letter-spacing: 0.6px;
 }
 
-/*.btn__menu{
+.btn__menu{
     background-color: transparent;
     border: none;
     display: none;
     transition: all 300ms ease;
-}*/
+}
 
 .nav__links {
   display: flex;
@@ -76,7 +84,7 @@ nav {
   font-size: 14px;
   font-weight: 600;
   padding-top: 4px;
-  letter-spacing: 0.35;
+  letter-spacing: 0.35px;
   border-bottom: 2px solid transparent;
   position: relative;
   transition: all 300ms;
@@ -98,4 +106,30 @@ nav {
   border: none;
   width: auto;
   transition: all 300ms ease;
+}
+
+/* Header */
+
+.container{
+    padding: 96px 0;
+    max-width: 1280px;
+}
+
+header .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__description{
+    width: 40%;
+}
+
+.header__img--wrapper{
+    width: calc(100% - 40%);
+}
+
+.header__img{
+    width: 100%;
+    max-width: 768px;
 }
